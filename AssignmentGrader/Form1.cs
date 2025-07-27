@@ -58,8 +58,8 @@ namespace AssignmentGrader
                 // Throw errors if the amounts are out of acceptable ranges.
                 if (students < 1 || students > 99)
                     throw new ArgumentOutOfRangeException("Student amount must be between 1 and 99");
-                if (assignments < 1 || assignments > 99)
-                    throw new ArgumentOutOfRangeException("Assignment amount must be between 1 and 99");
+                if (assignments < 1 || assignments > 9)
+                    throw new ArgumentOutOfRangeException("Assignment amount must be between 1 and 9");
 
                 // Initialize Arrays
                 studentNames = new string[students];
