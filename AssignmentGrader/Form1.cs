@@ -56,7 +56,7 @@ namespace AssignmentGrader
                 assignments = Int16.Parse(txtNumAssignments.Text);
 
                 // Throw errors if the amounts are out of acceptable ranges.
-                if (students < 1 || students > 10)
+                if (students < 1 || students > 99)
                     throw new ArgumentOutOfRangeException("Student amount must be between 1 and 99");
                 if (assignments < 1 || assignments > 99)
                     throw new ArgumentOutOfRangeException("Assignment amount must be between 1 and 99");
